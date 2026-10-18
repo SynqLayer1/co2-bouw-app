@@ -1,3 +1,10 @@
+import "./globals.css";
+
+export const metadata = {
+  title: "SynqLab SaaS Platform",
+  description: "Productieklaar SaaS Dashboard",
+};
+
 export default function RootLayout({
   children,
 }: {
@@ -5,7 +12,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="nl">
-      <body>{children}</body>
+      <body className="bg-slate-950 text-slate-100 antialiased min-h-screen">
+        {children}
+      </body>
     </html>
   );
 }
